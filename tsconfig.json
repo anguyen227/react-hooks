@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "noEmitOnError": true,
+        "skipLibCheck": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "rootDir": "./src",
+        "moduleResolution": "node",
+        "jsx": "react-jsx",
+        "strict": true,
+        "isolatedModules": true,
+        "lib": ["dom", "dom.iterable", "esnext"]
+    },
+
+    "exclude": ["node_modules", "dist", "src/**/*.test.ts"],
+    "include": ["src/**/*"]
+}
