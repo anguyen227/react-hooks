@@ -21,7 +21,7 @@
         "build:cjs": "tsc -p tsconfig.cjs.json",
         "build:es": "tsc -p tsconfig.es.json",
         "build:types": "tsc -p tsconfig.d.json",
-        "prepare": "npm run build"
+        "prepare": "npm install && npm run build"
     },
     "devDependencies": {
         "@types/react": "^17.0.27",
