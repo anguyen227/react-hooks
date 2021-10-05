@@ -17,12 +17,11 @@
     "scripts": {
         "clean": "rimraf -rf ./dist",
         "typeguard": "tsc --noEmit true",
-        "build": "npm run build:cjs && npm run build:es && npm run build:types",
+        "build": "npm update && npm run build:cjs && npm run build:es && npm run build:types",
         "build:cjs": "tsc -p tsconfig.cjs.json",
         "build:es": "tsc -p tsconfig.es.json",
         "build:types": "tsc -p tsconfig.d.json",
-        "prepare": "npm run build",
-        "preprepare": "npm update"
+        "prepare": "npm run build"
     },
     "devDependencies": {
         "@types/react": "^17.0.27",
